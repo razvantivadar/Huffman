@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Huffman Compressor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Huffman Text Compressor</h1>
+  <textarea id="inputText" rows="5" placeholder="Enter your text here..."></textarea>
+  <button onclick="compress()">Compress</button>
+  <h2>Character Codes</h2>
+  <table id="codesTable">
+    <thead>
+      <tr>
+        <th>Character</th>
+        <th>Huffman Code</th>
+      </tr>
+    </thead>
+    <tbody id="codesBody"></tbody>
+  </table>
+  <h2>Encoded Output</h2>
+  <pre id="encoded"></pre>
+  <h2>Compression Rate</h2>
+  <pre id="rate"></pre>
 
+  <script src="app.js"></script>
+</body>
+</html>
